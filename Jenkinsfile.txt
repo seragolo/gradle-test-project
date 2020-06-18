@@ -4,6 +4,6 @@ node {
         checkout scm
     }
     stage('Build') { 
-        
+        sh "chmod +x gradlew && ./gradlew build"
     }
 }
